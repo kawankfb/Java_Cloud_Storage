@@ -39,7 +39,7 @@ public class FileController {
 
         }
         else {
-            ctx.status(403);
+            ctx.status(401);
             ctx.contentType("application/json");
             ctx.result("{\"error\" : \"Unauthorized\" }");
         }

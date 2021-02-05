@@ -33,7 +33,7 @@ public class Main {
 
         String url = "jdbc:mysql://localhost:3306/java_cloud_storage";
         String username = "root";
-        String password = "";
+        String password = "kawan1378";
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             setConnection(connection);

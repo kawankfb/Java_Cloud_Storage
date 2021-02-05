@@ -13,7 +13,7 @@ UserModel userModel;
         String name=ctx.formParam("name");
         String email=ctx.formParam("email");
         String password=ctx.formParam("password");
-        boolean wrongInput= isAcceptable(name+password+email);
+        boolean wrongInput= !isAcceptable(name+password+email);
         if (wrongInput) {
             ctx.status(400);
             ctx.result("{\"error\" : \"wrong input\"}");
